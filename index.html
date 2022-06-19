@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="default eldenring-start">
+<!--html lang="en" class="default eldenring-start"-->
+<html lang="en" class="default eldenring-ranni-dark-moon">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>~/startpage</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/searchbar.css">
 </head>
 
-<body class="fade-in">
+<body class="fade-in stars">
 	<canvas id="canvas"></canvas>
 	<div id="startpage" class="container">
 		<div class="left-container">
@@ -20,9 +22,19 @@
 		</div>
 
 		<div class="right-container">
-			<div class="head">
+			<!--div class="head">
 			  <p>&gt; cd ~/<span class="blinking">_</span></p>
-			</div>
+			</div-->
+
+			<div class="navigation-searchbar">
+                <!--img class="duckduckgo-icon" src="./assets/media/icons/duckduckgo.svg" -->
+                <form onsubmit="return searchb()" id="search_form_homepage" class="no-menu" name="x" action="https://duckduckgo.com/" target="_top">	
+                    <input autofocus type="text" autocomplete="off" name="q" id="search_form_input_homepage" onfocus="if ('rc' in window) {nua('nro',rc)};fq=1;" onblur="fq=0" value="" placeholder="Hmm, what to look for?">
+                    <button accesskey="/" id="search_button_homepage" type="submit">
+                        <img src="./assets/media/icons/search.svg" alt="decorative">
+                    </button>
+                </form>
+            </div>
 
 			<div class="bookmarks">
 				<div class="category">
